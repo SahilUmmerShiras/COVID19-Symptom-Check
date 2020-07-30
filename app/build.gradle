@@ -51,6 +51,7 @@ dependencies {
 
     // work manager
     implementation "androidx.work:work-runtime:$work_version"
+    implementation project(path: ':covidsymptomcheck')
 
 
 }
