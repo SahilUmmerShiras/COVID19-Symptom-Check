@@ -49,8 +49,7 @@
             android:background="#c0c0c0"/>
 
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:chatview="http://schemas.android.com/apk/res-auto"
+        <LinearLayout xmlns:chatview="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
 
             style="@style/Widget.AppCompat.ButtonBar"
@@ -68,7 +67,7 @@
                 chatview:bubbleElevation="elevated"
                 chatview:bubbleBackgroundRcv="@color/blue"
                 chatview:bubbleBackgroundSend="@color/white"
-                chatview:inputHint="@string/start_typing"/>
+                />
 
         </LinearLayout>
 
