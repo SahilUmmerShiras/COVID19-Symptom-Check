@@ -53,7 +53,11 @@ import org.w3c.dom.Text;
 import java.util.Objects;
 
 
+
 public class question1  extends AppCompatActivity {
+
+    private final String TRIAGE_URL ="https://api.infermedica.com/covid19/triage";
+    private final String DIAGNOSIS_URL = "https://api.infermedica.com/covid19/diagnosis";
 
     private ChatView chatView1;
     private JSONObject covidObject = new JSONObject();
@@ -61,8 +65,7 @@ public class question1  extends AppCompatActivity {
     private MutableLiveData<JSONObject> responseAlert = new MutableLiveData<>();
     private  JSONArray evidence = new JSONArray(); //Array for storing id and choice
 
-    private final String TRIAGE_URL = BuildConfig.triage_url;
-    private final String DIAGNOSIS_URL = BuildConfig.diagnosis_url;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
